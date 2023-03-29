@@ -5,4 +5,13 @@
     <string name="phone">Phone</string>
     <string name="Desc">Desc</string>
     <string name="txtThanks">Thanks fer Eatin\' wif us!</string>
+    <string name="txtEmail">Email:</string>
+    <string name="txtPhone">Phone Number: </string>
+    <string name="txtName">Reservation Name: </string>
+    <string name="txtPartySize">Party Size:</string>
+    <string name="btnSubmit">Make Reservation</string>
+    <string name="edtEmail">Email@mail.com</string>
+    <string name="edtPhone">(XXX) XXX-XXXX</string>
+    <string name="edtName">Name</string>
+    <string name="edtPartySize">\?</string>
 </resources>
