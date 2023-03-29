@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="txtReservationMade">First Name Last Name, your reservation has been made. We will contact your *preferred method*, *method* when your reservation is ready.</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
     <string name="Desc">Desc</string>
-    <string name="txtPhone">(417) - 000 - 0000</string>
-    <string name="txtEmail">example@gmail.com</string>
+    <string name="txtThanks">Thanks fer Eatin\' wif us!</string>
 </resources>
