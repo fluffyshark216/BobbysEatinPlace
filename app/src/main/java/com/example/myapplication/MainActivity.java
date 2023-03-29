@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs",MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
 
-                editor.putString("Email",String.valueOf(R.id.txtEmail));
-                editor.putString("Phone",String.valueOf(R.id.txtPhone));
+                editor.putString("Email",String.valueOf(R.id.edtEmail));
+                editor.putString("Phone",String.valueOf(R.id.edtPhone));
                 editor.putString("Name",String.valueOf(R.id.edtName));
                 editor.putString("PartySize",String.valueOf(R.id.edtPartySize));
                 editor.apply();
