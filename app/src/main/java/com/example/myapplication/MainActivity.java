@@ -9,26 +9,39 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private RadioGroup contact;
     private RadioButton radioButton;
     private RadioButton radioButtonTwo;
-
+    private EditText edtEmail;
+    private EditText edtPhone;
+    private TextView txtEmail;
+    private TextView txtPhone;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        edtEmail = findViewById(R.id.edtEmail);
+        edtPhone = findViewById(R.id.edtPhone);
+        txtEmail = findViewById(R.id.txtEmail);
+        txtPhone = findViewById(R.id.txtPhone);
         contact = findViewById(R.id.radioGroup);
-        radioButton = findViewById(R.id.radioButton);
-        radioButtonTwo = findViewById(R.id.radioButton2);
+        radioButton = findViewById(R.id.rbEmail);
+        radioButtonTwo = findViewById(R.id.rbPhone);
         radioButton.setOnClickListener(view -> {
-
+            edtEmail.setVisibility(view.VISIBLE);
+            txtEmail.setVisibility(view.VISIBLE);
+            edtPhone.setVisibility(view.INVISIBLE);
+            txtPhone.setVisibility(view.INVISIBLE);
         });
         radioButtonTwo.setOnClickListener(view -> {
-
+            edtPhone.setVisibility(view.VISIBLE);
+            txtPhone.setVisibility(view.VISIBLE);
+            edtEmail.setVisibility(view.INVISIBLE);
+            txtEmail.setVisibility(view.INVISIBLE);
         });
 
         Button button = (Button) findViewById(R.id.btnSubmit);
