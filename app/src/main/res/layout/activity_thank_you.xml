@@ -34,8 +34,8 @@
 
     <ImageView
         android:id="@+id/imgChicken"
-        android:layout_width="292dp"
-        android:layout_height="239dp"
+        android:layout_width="290dp"
+        android:layout_height="201dp"
         android:layout_marginStart="59dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="60dp"
@@ -48,4 +48,15 @@
         app:layout_constraintTop_toBottomOf="@+id/txtReservationMade"
         app:layout_constraintVertical_bias="0.187"
         app:srcCompat="@drawable/chickenandpotatoes" />
+
+    <TextView
+        android:id="@+id/txtThanks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtThanks"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgChicken" />
 </androidx.constraintlayout.widget.ConstraintLayout>
