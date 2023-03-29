@@ -3,4 +3,6 @@
     <string name="email">Email</string>
     <string name="phone">Phone</string>
     <string name="Desc">Desc</string>
+    <string name="txtPhone">(417) - 000 - 0000</string>
+    <string name="txtEmail">example@gmail.com</string>
 </resources>
