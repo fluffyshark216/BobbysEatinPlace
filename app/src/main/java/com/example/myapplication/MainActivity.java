@@ -49,17 +49,19 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs",MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+
+                editor.putString("Email",String.valueOf(R.id.txtEmail));
+                editor.putString("Phone",String.valueOf(R.id.txtPhone));
+                editor.putString("Name",String.valueOf(R.id.edtName));
+                editor.putString("PartySize",String.valueOf(R.id.edtPartySize));
+                editor.apply();
+
                 startActivity(new Intent(MainActivity.this, ThankYou.class));
             }
         });
-       SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs",MODE_PRIVATE);
-       SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        editor.putString("Email",String.valueOf(R.id.txtEmail));
-        editor.putString("Phone",String.valueOf(R.id.txtPhone));
-        editor.putString("Name",String.valueOf(R.id.edtName));
-        editor.putString("PartySize",String.valueOf(R.id.edtPartySize));
-        editor.apply();
 
     }
 }
