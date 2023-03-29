@@ -21,6 +21,7 @@
         android:id="@+id/txtReservationMade"
         android:layout_width="405dp"
         android:layout_height="101dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/txtReservationMade"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -30,4 +31,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLogo"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imgChicken"
+        android:layout_width="292dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="73dp"
+        android:contentDescription="Plate of chicken and taters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtReservationMade"
+        app:layout_constraintVertical_bias="0.187"
+        app:srcCompat="@drawable/chickenandpotatoes" />
 </androidx.constraintlayout.widget.ConstraintLayout>
