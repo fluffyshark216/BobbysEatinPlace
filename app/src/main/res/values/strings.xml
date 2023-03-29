@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="txtReservationMade">First Name Last Name, your reservation has been made. We will contact your *preferred method*, *method* when your reservation is ready.</string>
 </resources>
